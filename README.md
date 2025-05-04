@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# Ruby Cipher Haven 🔐
 
-## Project info
+Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klasik dan enkripsi file biner berbasis Vigenère dan turunannya.
 
-**URL**: https://lovable.dev/projects/64ea51b0-4750-4966-ae73-d08ce69a13cd
+## ✨ Fitur
 
-## How can I edit this code?
+* Enkripsi & dekripsi teks dengan berbagai cipher klasik: Vigenère, Affine, Hill, Playfair, Super Encryption, dll.
+* Upload & enkripsi file biner (gambar, audio, dokumen, database).
+* Output dalam Base64.
+* Download hasil enkripsi sebagai file.
+* UI interaktif dan modern berbasis React.
 
-There are several ways of editing your application.
+## 🚀 Cara Menjalankan
 
-**Use Lovable**
+1. **Clone repositori**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/64ea51b0-4750-4966-ae73-d08ce69a13cd) and start prompting.
+   ```bash
+   git clone https://github.com/sabenih726/ruby-cipher-haven.git
+   cd ruby-cipher-haven
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+2. **Instal dependensi**
 
-**Use your preferred IDE**
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Jalankan server lokal**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+   ```bash
+   npm run dev
+   ```
 
-Follow these steps:
+4. Buka di browser:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   ```
+   http://localhost:3000
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🥪 Contoh
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Input: `plaintext` atau file `.jpg`
+* Output: Base64 string hasil enkripsi
+* Download: file `.enc` atau `.dat` yang bisa didekripsi kembali
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📁 Struktur Folder
+
+```
+├── components/
+│   ├── CipherInput.tsx
+│   ├── CipherSelector.tsx
+│   └── FileEncryptor.tsx  <-- fitur enkripsi file
+├── utils/
+│   └── ciphers/
+├── pages/
+│   └── index.tsx
+├── public/
+├── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 💠 Teknologi
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* React + TypeScript
+* Tailwind CSS
+* Vite
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/64ea51b0-4750-4966-ae73-d08ce69a13cd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
