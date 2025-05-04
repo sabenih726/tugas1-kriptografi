@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,6 +11,7 @@ import { encryptAffine, decryptAffine } from "@/utils/ciphers/affine";
 import { encryptHill, decryptHill } from "@/utils/ciphers/hill";
 import { encryptSuperEncryption, decryptSuperEncryption } from "@/utils/ciphers/superEncryption";
 import { useToast } from "@/components/ui/use-toast";
+import FileEncryptor from "@/components/FileEncryptor"; // Komponen baru
 
 const Index = () => {
   const { toast } = useToast();
@@ -24,7 +24,6 @@ const Index = () => {
   const [affineB, setAffineB] = useState<number>(0);
   const [mode, setMode] = useState<"encrypt" | "decrypt">("encrypt");
 
-  // Reset output when cipher or input changes
   useEffect(() => {
     setOutput("");
   }, [selectedCipher, input]);
@@ -238,7 +237,7 @@ const Index = () => {
                   />
 
                   {renderCipherSpecificInputs()}
-                  
+
                   <Button 
                     onClick={handleProcess} 
                     className="w-full"
@@ -267,7 +266,12 @@ const Index = () => {
           </div>
         </CardContent>
       </Card>
-      
+
+      {/* Komponen File Encryptor */}
+      <div className="max-w-5xl mx-auto mt-10">
+        <FileEncryptor />
+      </div>
+
       <footer className="mt-6 text-center text-sm text-muted-foreground">
         &copy; 2025 Implementasi Tugas 1 Kriptografi
       </footer>
