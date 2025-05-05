@@ -1,4 +1,4 @@
-# Ruby Cipher Haven 🔐
+# Implementasi Algoritma Kriptografi 🔐
 
 Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klasik dan enkripsi file biner berbasis Vigenère dan turunannya.
 
