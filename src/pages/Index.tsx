@@ -194,7 +194,7 @@ const Index = () => {
       <Card className="w-full max-w-5xl mx-auto shadow-lg">
         <CardHeader className="cipher-gradient text-white rounded-t-lg">
           <CardTitle className="text-center text-2xl md:text-3xl font-bold">
-            Implementasi Algoritma Kriptografi Klasik
+            Implementasi Algoritma Kriptografi
           </CardTitle>
         </CardHeader>
         <CardContent className="p-6">
@@ -273,7 +273,7 @@ const Index = () => {
       </div>
 
       <footer className="mt-6 text-center text-sm text-muted-foreground">
-        &copy; 2025 Implementasi Tugas 1 Kriptografi
+        &copy; 2025 Tugas 1 Kriptografi Rizki Fermanta
       </footer>
     </div>
   );
