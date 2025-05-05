@@ -2,13 +2,20 @@
 
 Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klasik dan enkripsi file biner berbasis Vigenère dan turunannya.
 
-## ✨ Fitur
+## ✨ Fitur Utama
 
-* Enkripsi & dekripsi teks dengan berbagai cipher klasik: Vigenère, Affine, Hill, Playfair, Super Encryption, dll.
-* Upload & enkripsi file biner (gambar, audio, dokumen, database).
-* Output dalam Base64.
-* Download hasil enkripsi sebagai file.
-* UI interaktif dan modern berbasis React.
+- 🔠 Enkripsi & dekripsi pesan teks menggunakan:
+  - Vigenère Cipher (standar, Auto-key, Extended/ASCII)
+  - Affine Cipher
+  - Hill Cipher
+  - Playfair Cipher
+  - Super Encryption
+- 📁 Enkripsi & dekripsi file biner:
+  - Mendukung semua tipe file (jpg, pdf, docx, mp3, dll.)
+  - File terenkripsi tidak bisa dibuka tanpa didekripsi terlebih dahulu
+- 📦 Unduh hasil enkripsi sebagai file `.enc`, `.dat`, atau format lainnya
+- 🧾 Output cipher ditampilkan dalam bentuk Base64
+- 🎨 UI responsif, dibangun dengan React, Tailwind, dan Radix UI
 
 ## 🚀 Cara Menjalankan
 
@@ -41,22 +48,25 @@ Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klas
 
 * Input: `plaintext` atau file `.jpg`
 * Output: Base64 string hasil enkripsi
-* Download: file `.enc` atau `.dat` yang bisa didekripsi kembali
+* Download: Hasil sebagai file .enc, .dat, atau format bebas
+* Dekripsi: Mengembalikan file ke bentuk dan format aslinya
 
 ## 📁 Struktur Folder
 
 ```
-├── components/
-│   ├── CipherInput.tsx
-│   ├── CipherSelector.tsx
-│   └── FileEncryptor.tsx  <-- fitur enkripsi file
-├── utils/
-│   └── ciphers/
-├── pages/
-│   └── index.tsx
-├── public/
-├── README.md
-```
+Implementasi-Algoritma-Kriptografi/
+├── src/
+│   ├── components/            # Komponen UI
+│   ├── ciphers/               # Implementasi algoritma
+│   ├── hooks/                 # React hooks (jika ada)
+│   ├── lib/                   # Fungsi pendukung (helper, utilitas)
+│   ├── pages/                 # Halaman utama aplikasi
+│   └── main.tsx              # Entry point aplikasi
+├── public/                   # Aset publik (favicon, og-image)
+├── index.html                # Halaman HTML utama
+├── package.json              # Dependensi & konfigurasi npm
+├── tailwind.config.ts        # Konfigurasi Tailwind CSS
+└── vite.config.ts            # Konfigurasi Vite 
 
 ## 💠 Teknologi
 
@@ -64,3 +74,5 @@ Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klas
 * Tailwind CSS
 * Vite
 
+📜 Lisensi
+Proyek ini dikembangkan untuk keperluan akademik. Silakan modifikasi atau kembangkan lebih lanjut sesuai kebutuhan tugas atau penelitian Anda.
