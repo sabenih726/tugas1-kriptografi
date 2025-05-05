@@ -15,8 +15,8 @@ Aplikasi React + TypeScript untuk mengimplementasikan algoritma kriptografi klas
 1. **Clone repositori**
 
    ```bash
-   git clone https://github.com/sabenih726/ruby-cipher-haven.git
-   cd ruby-cipher-haven
+   git clone https://github.com/sabenih726/Implementasi-Algoritma-Kriptografi.git
+   cd Implementasi-Algoritma-Kriptografi
    ```
 
 2. **Instal dependensi**
